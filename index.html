@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Paragon</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Paragon</h1>
+        <table>
+            <thead>
+                <th>LP</th>
+                <th>Nazwa</th>
+                <th>Ilość</th>
+                <th>Cena</th>
+                <th>Suma</th>
+                <th>Edytuj</th>
+                <th>Usuń</th>
+            </thead>
+            <tbody>
+                <td>1</td>
+                <td>nazwa1</td>
+                <td>2</td>
+                <td>2.30</td>
+                <td>4.60</td>
+                <td>
+                    <input class="edit" type="button" value="Edytuj">
+                </td>
+                <td>
+                    <input class="delete" type="button" value="Usuń">
+                </td>
+            </tbody>
+        </table>
+        <form>
+            <div>
+              <label for="name">Nazwa</label>
+              <input type="text" id="name">
+              <small></small>
+            </div>
+            <div>
+              <label for="amount">Ilość</label>
+              <input type="number" id="amount" min = 1 value = 1>
+              <small></small>
+            </div>
+        
+            <div>
+              <label for="price">Cena</label>
+              <input type="number" id="price" step='0.01' value='0.00' min = 0>
+              <small></small>
+            </div>
+            <input type="submit" value="Dodaj">
+          </form>
+        <script src="app.js"></script>
+    </body>
+    
+</html>

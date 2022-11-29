@@ -1,0 +1,37 @@
+table {
+  width: 100%;
+  height: 4rem;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+
+th {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  background: rgb(214, 188, 70);
+  border-color: rgb(0, 0, 0);
+}
+
+td {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+
+table tr {
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+table tr:hover {
+  background-color: rgb(177, 174, 174);
+}
+
+.edit {
+  border-radius: 20px;
+  background-color: cornflowerblue;
+}
+
+.delete {
+  border-radius: 20px;
+  background-color: rgb(204, 58, 58);
+}
